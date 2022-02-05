@@ -1,0 +1,1743 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<questestinterop xmlns="http://www.imsglobal.org/xsd/ims_qtiasiv1p2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/ims_qtiasiv1p2 http://www.imsglobal.org/xsd/ims_qtiasiv1p2p1.xsd">
+  <assessment ident="i1a343a4f9e00a2ce83d742205c3a3363" title="sample_quiz_18_11_2021">
+    <qtimetadata>
+      <qtimetadatafield>
+        <fieldlabel>cc_maxattempts</fieldlabel>
+        <fieldentry>1</fieldentry>
+      </qtimetadatafield>
+    </qtimetadata>
+    <section ident="root_section">
+      <item ident="i06b15aaa2046df47294d7bf1cad9a0d2" title="Question 1">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>multiple_choice_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>1</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>i96129d0ddff60b22bc6df56cf1c75a7f</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">The wildcard used with $uniq command to see the duplicate lines from the file</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Single">
+            <render_choice>
+              <response_label ident="1000">
+                <material>
+                  <mattext texttype="text/plain">"-D"</mattext>
+                </material>
+              </response_label>
+              <response_label ident="1001">
+                <material>
+                  <mattext texttype="text/plain">"-d"</mattext>
+                </material>
+              </response_label>
+              <response_label ident="1002">
+                <material>
+                  <mattext texttype="text/plain">"-l"</mattext>
+                </material>
+              </response_label>
+              <response_label ident="1003">
+                <material>
+                  <mattext texttype="text/plain">"-c"</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal respident="response1">1001</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+      </item>
+      <item ident="i21c58e47a1a80e754148cc396bc8794d" title="Question 2">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>multiple_choice_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>1</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>i7d8264fc9318715389590d54111a82c8</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">The output of command $ touch file.txt</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Single">
+            <render_choice>
+              <response_label ident="2000">
+                <material>
+                  <mattext texttype="text/plain">Creates the file.txt if not exists.</mattext>
+                </material>
+              </response_label>
+              <response_label ident="2001">
+                <material>
+                  <mattext texttype="text/plain">Go inside the file.txt</mattext>
+                </material>
+              </response_label>
+              <response_label ident="2002">
+                <material>
+                  <mattext texttype="text/plain">Copy the file.txt</mattext>
+                </material>
+              </response_label>
+              <response_label ident="2003">
+                <material>
+                  <mattext texttype="text/plain">Cut the file.txt</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal respident="response1">2000</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+      </item>
+      <item ident="i7d5e14c0976b4550749eb73f126c6a21" title="Question 3">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>true_false_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>1</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>id9ce884e741a848f4618a478ff7bdaae</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+		<presentation>
+          <material>
+            <mattext texttype="text/html">Uniq command can work without sorting.</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Single">
+            <render_choice>
+              <response_label ident="3000">
+                <material>
+                  <mattext texttype="text/plain">True</mattext>
+                </material>
+              </response_label>
+              <response_label ident="3001">
+                <material>
+                  <mattext texttype="text/plain">False</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal respident="response1">3001</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+      </item>
+      <item ident="i98f621314759192aa9ca415f7654c318" title="Question 4">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>multiple_choice_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>1</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>i0678941d1455e44347812daab2c2c927</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">The command to print masai_a masai_b masai_c masai_d masai_e.</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Single">
+            <render_choice>
+              <response_label ident="4000">
+                <material>
+                  <mattext texttype="text/plain">$ echo masai_{a,b,c,d,e}</mattext>
+                </material>
+              </response_label>
+              <response_label ident="4001">
+                <material>
+                  <mattext texttype="text/plain">$ print masai (a-e)</mattext>
+                </material>
+              </response_label>
+              <response_label ident="4002">
+                <material>
+                  <mattext texttype="text/plain">$ echo masai [a-e]</mattext>
+                </material>
+              </response_label>
+              <response_label ident="4003">
+                <material>
+                  <mattext texttype="text/plain">$ grep masai_{a,b,c,d,e}</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal respident="response1">4000</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+      </item>
+      <item ident="i84bc0b936d3cda15360f8d9d9d72b08f" title="Question 5">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>multiple_choice_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>1</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>i4cd478441e3125640fa5d8a7605b6de0</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">The command which will display “masai school”</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Single">
+            <render_choice>
+              <response_label ident="5000">
+                <material>
+                  <mattext texttype="text/plain">$ find <”masai school”></mattext>
+                </material>
+              </response_label>
+              <response_label ident="5001">
+                <material>
+                  <mattext texttype="text/plain">$ echo “masai school”</mattext>
+                </material>
+              </response_label>
+              <response_label ident="5002">
+                <material>
+                  <mattext texttype="text/plain">$ echo (“masai school”)</mattext>
+                </material>
+              </response_label>
+              <response_label ident="5003">
+                <material>
+                  <mattext texttype="text/plain">$ touch “masai school”</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal respident="response1">5001</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+      </item>
+      <item ident="i4f44269b63a95e9d89d8853e6378c509" title="Question 6">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>multiple_choice_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>1</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>i86d9f88a51c0aad78d342ba97352b659</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">The command to find all the folders and files in the given path.</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Single">
+            <render_choice>
+              <response_label ident="6000">
+                <material>
+                  <mattext texttype="text/plain">$ find <path> -type d</mattext>
+                </material>
+              </response_label>
+              <response_label ident="6001">
+                <material>
+                  <mattext texttype="text/plain">$find (path)  -type d</mattext>
+                </material>
+              </response_label>
+              <response_label ident="6002">
+                <material>
+                  <mattext texttype="text/plain">$ find <path> -type f</mattext>
+                </material>
+              </response_label>
+              <response_label ident="6003">
+                <material>
+                  <mattext texttype="text/plain">$find(path)</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal respident="response1">6000</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+      </item>
+      <item ident="idec2562a9b18c339a6405aa30e3bb020" title="Question 7">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>multiple_choice_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>1</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>if707de591f20bb699ced2c4313631e4f</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">The command to get the first 10 lines of the file.</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Single">
+            <render_choice>
+              <response_label ident="7000">
+                <material>
+                  <mattext texttype="text/plain">head file.txt</mattext>
+                </material>
+              </response_label>
+              <response_label ident="7001">
+                <material>
+                  <mattext texttype="text/plain">head -n 10 file.txt</mattext>
+                </material>
+              </response_label>
+              <response_label ident="7002">
+                <material>
+                  <mattext texttype="text/plain">head -10 file.txt</mattext>
+                </material>
+              </response_label>
+              <response_label ident="7003">
+                <material>
+                  <mattext texttype="text/plain">Both a and b</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal respident="response1">7003</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+      </item>
+      <item ident="ica6dd09270b9063efa982ce0c0a3410a" title="Question 8">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>multiple_choice_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>1</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>i0b9259a2b3f542ff85fa3b1967ce2032</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">Command to get the number of words in a file</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Single">
+            <render_choice>
+              <response_label ident="8000">
+                <material>
+                  <mattext texttype="text/plain">wc -m</mattext>
+                </material>
+              </response_label>
+              <response_label ident="8001">
+                <material>
+                  <mattext texttype="text/plain">wc -w</mattext>
+                </material>
+              </response_label>
+              <response_label ident="8002">
+                <material>
+                  <mattext texttype="text/plain">wc -c</mattext>
+                </material>
+              </response_label>
+              <response_label ident="8003">
+                <material>
+                  <mattext texttype="text/plain">wc -a</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal respident="response1">8000</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+      </item>
+      <item ident="i2d94f3a84d2867d1d672550e01badc4b" title="Question 9">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>multiple_choice_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>1</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>i99e706334675c7df1dc72d3163037a25</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">The wildcard to sort the months written in a file as per the calendar.</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Single">
+            <render_choice>
+              <response_label ident="9000">
+                <material>
+                  <mattext texttype="text/plain">"-m"</mattext>
+                </material>
+              </response_label>
+              <response_label ident="9001">
+                <material>
+                  <mattext texttype="text/plain">"-M"</mattext>
+                </material>
+              </response_label>
+              <response_label ident="9002">
+                <material>
+                  <mattext texttype="text/plain">"-month"</mattext>
+                </material>
+              </response_label>
+              <response_label ident="9003">
+                <material>
+                  <mattext texttype="text/plain">"--ms"</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal respident="response1">9001</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+      </item>
+      <item ident="i4beaa8ab7224671951c8e4bdf6808e3e" title="Question 10">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>multiple_choice_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>1</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>ia761c441994c78e4abae53d0baa31101</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">The wildcard used to sort the contents of a file in descending order.</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Single">
+            <render_choice>
+              <response_label ident="10000">
+                <material>
+                  <mattext texttype="text/plain">"-d"</mattext>
+                </material>
+              </response_label>
+              <response_label ident="10001">
+                <material>
+                  <mattext texttype="text/plain">"-s"</mattext>
+                </material>
+              </response_label>
+              <response_label ident="10002">
+                <material>
+                  <mattext texttype="text/plain">"-r"</mattext>
+                </material>
+              </response_label>
+              <response_label ident="10003">
+                <material>
+                  <mattext texttype="text/plain">None of these.</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal respident="response1">10002</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+      </item>
+      <item ident="idd88344e72a6cb3e90e7e896e977e7b0" title="Question 11">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>multiple_choice_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>1</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>i493cd564f468654e51f663d79922a567</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">How to write the contents of files “file-1.txt” and “file-2.txt” to a new file “file-3.txt”?</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Single">
+            <render_choice>
+              <response_label ident="11000">
+                <material>
+                  <mattext texttype="text/plain">cat   file-1.txt   file-2.txt  >  file-3.txt</mattext>
+                </material>
+              </response_label>
+              <response_label ident="11001">
+                <material>
+                  <mattext texttype="text/plain">less   file-1.txt   file-2.txt  >  file-3.txt</mattext>
+                </material>
+              </response_label>
+              <response_label ident="11002">
+                <material>
+                  <mattext texttype="text/plain">cat   file-1.txt  &  file-2.txt  &>  file-3.txt</mattext>
+                </material>
+              </response_label>
+              <response_label ident="11003">
+                <material>
+                  <mattext texttype="text/plain">less   file-1.txt &  file-2.txt  &>  file-3.txt</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal respident="response1">11000</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+      </item>
+      <item ident="i2a7a57c7170bd846271fff56371cefd7" title="Question 12">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>multiple_choice_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>1</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>iad1ee83ee3acb768abb66a5f0cba6e98</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">How to write standard error of a command to a file “error.txt”.</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Single">
+            <render_choice>
+              <response_label ident="12000">
+                <material>
+                  <mattext texttype="text/plain">command > error.txt</mattext>
+                </material>
+              </response_label>
+              <response_label ident="12001">
+                <material>
+                  <mattext texttype="text/plain">command $> error.txt</mattext>
+                </material>
+              </response_label>
+              <response_label ident="12002">
+                <material>
+                  <mattext texttype="text/plain">command &> error.txt</mattext>
+                </material>
+              </response_label>
+              <response_label ident="12003">
+                <material>
+                  <mattext texttype="text/plain">Can’t write standard error to a file</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal respident="response1">12002</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+      </item>
+      <item ident="i4298187e2e32ff8da833c895e8088545" title="Question 13">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>multiple_choice_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>1</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>ia0eaa64b3819fafa49a25ebf06a41eb3</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">What is the command to see the content of the file ‘sample.txt’</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Single">
+            <render_choice>
+              <response_label ident="13000">
+                <material>
+                  <mattext texttype="text/plain">cat sample.txt</mattext>
+                </material>
+              </response_label>
+              <response_label ident="13001">
+                <material>
+                  <mattext texttype="text/plain">ls sample.txt</mattext>
+                </material>
+              </response_label>
+              <response_label ident="13002">
+                <material>
+                  <mattext texttype="text/plain">ls -l sample.txt</mattext>
+                </material>
+              </response_label>
+              <response_label ident="13003">
+                <material>
+                  <mattext texttype="text/plain">less sample.txt</mattext>
+                </material>
+              </response_label>
+              <response_label ident="13004">
+                <material>
+                  <mattext texttype="text/plain">both a and d</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal respident="response1">13004</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+      </item>
+      <item ident="ifa155c37647f12466e208136f7ad4c13" title="Question 14">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>multiple_choice_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>1</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>i54d8118c4b66ce2ec622a28f89536fe3</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">Command to see the list of files, along with all hidden files in detailed and sorted form based on size.</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Single">
+            <render_choice>
+              <response_label ident="14000">
+                <material>
+                  <mattext texttype="text/plain">ls -l -a -t</mattext>
+                </material>
+              </response_label>
+              <response_label ident="14001">
+                <material>
+                  <mattext texttype="text/plain">ls -l -t -s</mattext>
+                </material>
+              </response_label>
+              <response_label ident="14002">
+                <material>
+                  <mattext texttype="text/plain">ls -l -a -s</mattext>
+                </material>
+              </response_label>
+              <response_label ident="14003">
+                <material>
+                  <mattext texttype="text/plain">ls -a -t -s</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal respident="response1">14002</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+      </item>
+      <item ident="i70d1b75401b9fc2bdb89e8d531c4c6bd" title="Question 15">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>multiple_choice_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>1</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>i7c0c7373c69112b06a7f0296b0652266</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">How to create directories with the names “folder1” , “folder2”, and “folder3” in one go?</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Single">
+            <render_choice>
+              <response_label ident="15000">
+                <material>
+                  <mattext texttype="text/plain">mkdir “folder1 folder2 folder3”</mattext>
+                </material>
+              </response_label>
+              <response_label ident="15001">
+                <material>
+                  <mattext texttype="text/plain">mkdir folder1  folder2  folder3</mattext>
+                </material>
+              </response_label>
+              <response_label ident="15002">
+                <material>
+                  <mattext texttype="text/plain">mkdir folder1_folder2_folder3</mattext>
+                </material>
+              </response_label>
+              <response_label ident="15003">
+                <material>
+                  <mattext texttype="text/plain">mkdir folder1, folder2, folder3</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal respident="response1">15001</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+      </item>
+      <item ident="i607450127e8d3ad10082f237289f5b36" title="Question 16">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>multiple_choice_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>1</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>i4b588a7a1627ec82f0df1f98659f3f8c</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">Your current working directory path is- ~alpha/bravo/charlie/delta. You want to move to charlie, which of the following command can be used?</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Single">
+            <render_choice>
+              <response_label ident="16000">
+                <material>
+                  <mattext texttype="text/plain">cd charlie</mattext>
+                </material>
+              </response_label>
+              <response_label ident="16001">
+                <material>
+                  <mattext texttype="text/plain">cd ..</mattext>
+                </material>
+              </response_label>
+              <response_label ident="16002">
+                <material>
+                  <mattext texttype="text/plain">cd..</mattext>
+                </material>
+              </response_label>
+              <response_label ident="16003">
+                <material>
+                  <mattext texttype="text/plain">cd /..</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal respident="response1">16001</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+      </item>
+      <item ident="icf9ee86cc0ef7c3a2a19d916af98d300" title="Question 17">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>multiple_choice_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>1</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>if93a1d371dc7e82d68d12111c9bf4f94</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">What is the command to get the path of your current working directory.</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Single">
+            <render_choice>
+              <response_label ident="17000">
+                <material>
+                  <mattext texttype="text/plain">cd pwd</mattext>
+                </material>
+              </response_label>
+              <response_label ident="17001">
+                <material>
+                  <mattext texttype="text/plain">print pwd</mattext>
+                </material>
+              </response_label>
+              <response_label ident="17002">
+                <material>
+                  <mattext texttype="text/plain">pwd</mattext>
+                </material>
+              </response_label>
+              <response_label ident="17003">
+                <material>
+                  <mattext texttype="text/plain">Both a and c</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal respident="response1">17002</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+      </item>
+      <item ident="i69be13aa9854cad2906887c2ad40a0e5" title="Question 18">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>multiple_choice_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>1</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>i9b550509ffe4254dd0c3bd63bdb0673c</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">What is the command to go to the directory named “new<space>folder”</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Single">
+            <render_choice>
+              <response_label ident="18000">
+                <material>
+                  <mattext texttype="text/plain">cd new\ folder</mattext>
+                </material>
+              </response_label>
+              <response_label ident="18001">
+                <material>
+                  <mattext texttype="text/plain">cd “new folder”</mattext>
+                </material>
+              </response_label>
+              <response_label ident="18002">
+                <material>
+                  <mattext texttype="text/plain">cd new-folder</mattext>
+                </material>
+              </response_label>
+              <response_label ident="18003">
+                <material>
+                  <mattext texttype="text/plain">cd new folder</mattext>
+                </material>
+              </response_label>
+              <response_label ident="18004">
+                <material>
+                  <mattext texttype="text/plain">Both a and b</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal respident="response1">18004</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+      </item>
+      <item ident="i15404566c1a5a67d7b0ba752a9bd23f7" title="Question 19">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>multiple_choice_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>1</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>i15dfef38095fb50bc3520d9b1b2e4278</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">What is the command to create a directory with the name  “new<space>folder”.</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Single">
+            <render_choice>
+              <response_label ident="19000">
+                <material>
+                  <mattext texttype="text/plain">mkdir new folder</mattext>
+                </material>
+              </response_label>
+              <response_label ident="19001">
+                <material>
+                  <mattext texttype="text/plain">mkdir new-folder</mattext>
+                </material>
+              </response_label>
+              <response_label ident="19002">
+                <material>
+                  <mattext texttype="text/plain">mkdir “new folder”</mattext>
+                </material>
+              </response_label>
+              <response_label ident="19003">
+                <material>
+                  <mattext texttype="text/plain">mkdir “new_folder”</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal respident="response1">19002</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+      </item>
+      <item ident="i6433f4235f1743959d5c00c02526f251" title="Question 20">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>multiple_choice_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>1</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>i8c79b3e7a6c13a77dee766150e8fe2dd</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">The flag used with delete command to remove a directory.</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Single">
+            <render_choice>
+              <response_label ident="20000">
+                <material>
+                  <mattext texttype="text/plain">"-d"</mattext>
+                </material>
+              </response_label>
+              <response_label ident="20001">
+                <material>
+                  <mattext texttype="text/plain">"-v"</mattext>
+                </material>
+              </response_label>
+              <response_label ident="20002">
+                <material>
+                  <mattext texttype="text/plain">"-f"</mattext>
+                </material>
+              </response_label>
+              <response_label ident="20003">
+                <material>
+                  <mattext texttype="text/plain">"-r"</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal respident="response1">20003</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+      </item>
+      <item ident="id0a832887bd2d53e1275a3ca9ed7dc8b" title="Question 21">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>multiple_choice_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>1</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>i8316bc317ff8f8ecdfcf3e72c06f8b05</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">The command used to delete a file</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Single">
+            <render_choice>
+              <response_label ident="21000">
+                <material>
+                  <mattext texttype="text/plain">del</mattext>
+                </material>
+              </response_label>
+              <response_label ident="21001">
+                <material>
+                  <mattext texttype="text/plain">rm</mattext>
+                </material>
+              </response_label>
+              <response_label ident="21002">
+                <material>
+                  <mattext texttype="text/plain">d</mattext>
+                </material>
+              </response_label>
+              <response_label ident="21003">
+                <material>
+                  <mattext texttype="text/plain">r</mattext>
+                </material>
+              </response_label>
+              <response_label ident="21004">
+                <material>
+                  <mattext texttype="text/plain">delete</mattext>
+                </material>
+              </response_label>
+              <response_label ident="21005">
+                <material>
+                  <mattext texttype="text/plain">remove</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal respident="response1">21001</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+      </item>
+      <item ident="i12dcc5ea7754b282a7b0013a3e04d886" title="Question 22">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>multiple_choice_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>1</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>i0a933fa3236e7ca0ed9cc1ce2eed0a9a</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">File command to print first 25 lines of the file - "file.txt"</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Single">
+            <render_choice>
+              <response_label ident="22000">
+                <material>
+                  <mattext texttype="text/plain">head file.txt -25</mattext>
+                </material>
+              </response_label>
+              <response_label ident="22001">
+                <material>
+                  <mattext texttype="text/plain">head -n 25 file.txt</mattext>
+                </material>
+              </response_label>
+              <response_label ident="22002">
+                <material>
+                  <mattext texttype="text/plain">head -25 file.txt</mattext>
+                </material>
+              </response_label>
+              <response_label ident="22003">
+                <material>
+                  <mattext texttype="text/plain">Both b and c</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal respident="response1">22001</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+      </item>
+      <item ident="i3d53fb4783491b1afe3184061b8c5bf9" title="Question 23">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>multiple_choice_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>1</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>i6ca74d0201a4b7d46682d623ddf973cc</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">In nano editor the shortcut to write to a file</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Single">
+            <render_choice>
+              <response_label ident="23000">
+                <material>
+                  <mattext texttype="text/plain">Ctrl + S</mattext>
+                </material>
+              </response_label>
+              <response_label ident="23001">
+                <material>
+                  <mattext texttype="text/plain">Ctrl + O</mattext>
+                </material>
+              </response_label>
+              <response_label ident="23002">
+                <material>
+                  <mattext texttype="text/plain">Ctrl + R</mattext>
+                </material>
+              </response_label>
+              <response_label ident="23003">
+                <material>
+                  <mattext texttype="text/plain">Ctrl + T</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal respident="response1">23001</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+      </item>
+      <item ident="i5f515cfe5061f94345b415d3d506f070" title="Question 24">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>multiple_choice_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>1</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>i185d97f7a586e85a525994216d932ac3</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">The max no of commands you can join using pipes</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Single">
+            <render_choice>
+              <response_label ident="24000">
+                <material>
+                  <mattext texttype="text/plain">1</mattext>
+                </material>
+              </response_label>
+              <response_label ident="24001">
+                <material>
+                  <mattext texttype="text/plain">2</mattext>
+                </material>
+              </response_label>
+              <response_label ident="24002">
+                <material>
+                  <mattext texttype="text/plain">3</mattext>
+                </material>
+              </response_label>
+              <response_label ident="24003">
+                <material>
+                  <mattext texttype="text/plain">None of the above</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal respident="response1">24003</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+      </item>
+      <item ident="ia35b010126c494522d45ee36c5ad199b" title="Question 25">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>multiple_choice_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>1</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>i22772e6d35d9b0349cb894e616bb6684</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">The command to count the no of lines in all the files ending with .txt in a particular folder</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Single">
+            <render_choice>
+              <response_label ident="25000">
+                <material>
+                  <mattext texttype="text/plain">$ wc -L *.txt</mattext>
+                </material>
+              </response_label>
+              <response_label ident="25001">
+                <material>
+                  <mattext texttype="text/plain">$ wc -l *.txt</mattext>
+                </material>
+              </response_label>
+              <response_label ident="25002">
+                <material>
+                  <mattext texttype="text/plain">$ wc -w *.txt</mattext>
+                </material>
+              </response_label>
+              <response_label ident="25003">
+                <material>
+                  <mattext texttype="text/plain">None of these</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal respident="response1">25001</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+      </item>
+      <item ident="ia95f177772959f8f34b7972a92261d94" title="Question 26">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>multiple_choice_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>1</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>ia7488cf28871c95a645bd0b0f78eb92b</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">The flag in mkdir command to create parent folders if they don't exist</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Single">
+            <render_choice>
+              <response_label ident="26000">
+                <material>
+                  <mattext texttype="text/plain">"-p"</mattext>
+                </material>
+              </response_label>
+              <response_label ident="26001">
+                <material>
+                  <mattext texttype="text/plain">"-f"</mattext>
+                </material>
+              </response_label>
+              <response_label ident="26002">
+                <material>
+                  <mattext texttype="text/plain">"-x"</mattext>
+                </material>
+              </response_label>
+              <response_label ident="26003">
+                <material>
+                  <mattext texttype="text/plain">"-a"</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal respident="response1">26000</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+      </item>
+      <item ident="i2691aecd5d9596942ab50ee8e3bd0175" title="Question 27">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>multiple_choice_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>1</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>i093f931a1b804176c5a012c0fa061de4</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">The command to rename a particular file</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Single">
+            <render_choice>
+              <response_label ident="27000">
+                <material>
+                  <mattext texttype="text/plain">mv</mattext>
+                </material>
+              </response_label>
+              <response_label ident="27001">
+                <material>
+                  <mattext texttype="text/plain">rn</mattext>
+                </material>
+              </response_label>
+              <response_label ident="27002">
+                <material>
+                  <mattext texttype="text/plain">cp</mattext>
+                </material>
+              </response_label>
+              <response_label ident="27003">
+                <material>
+                  <mattext texttype="text/plain">ls</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal respident="response1">27000</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+      </item>
+      <item ident="i8a3f98780bce8cf07adf69e275a9cbc1" title="Question 28">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>multiple_choice_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>1</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>i729025adba11850677c596fa3e59217e</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">The command that can be used to search for files</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Single">
+            <render_choice>
+              <response_label ident="28000">
+                <material>
+                  <mattext texttype="text/plain">find</mattext>
+                </material>
+              </response_label>
+              <response_label ident="28001">
+                <material>
+                  <mattext texttype="text/plain">search</mattext>
+                </material>
+              </response_label>
+              <response_label ident="28002">
+                <material>
+                  <mattext texttype="text/plain">grep</mattext>
+                </material>
+              </response_label>
+              <response_label ident="28003">
+                <material>
+                  <mattext texttype="text/plain">where</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal respident="response1">28000</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+      </item>
+      <item ident="i00cea1784301ddf24bcbdcf0a7fb7972" title="Question 29">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>true_false_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>1</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>i31fcd746035bc7170bac8e0e7368797f</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+		<presentation>
+          <material>
+            <mattext texttype="text/html">The command- $ uniq only removes duplicate lines that are adjacent to each other</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Single">
+            <render_choice>
+              <response_label ident="29000">
+                <material>
+                  <mattext texttype="text/plain">True</mattext>
+                </material>
+              </response_label>
+              <response_label ident="29001">
+                <material>
+                  <mattext texttype="text/plain">False</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal respident="response1">29000</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+      </item>
+      <item ident="if0d7fecd8d17549127e7d5d16793bb54" title="Question 30">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>true_false_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>1</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>ieb537ee5c271b650951e8e273ab203b5</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+		<presentation>
+          <material>
+            <mattext texttype="text/html">The tar programme is a classic tool for archieving files</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Single">
+            <render_choice>
+              <response_label ident="30000">
+                <material>
+                  <mattext texttype="text/plain">True</mattext>
+                </material>
+              </response_label>
+              <response_label ident="30001">
+                <material>
+                  <mattext texttype="text/plain">False</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal respident="response1">30000</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+      </item>
+    </section>
+  </assessment>
+</questestinterop>
